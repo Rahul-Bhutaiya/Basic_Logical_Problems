@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    int tableNumber = 5;
+    
+    //for loop
+    for(int i=1;i<=10;i++){
+        printf("%d * %d = %d\n",tableNumber,i,tableNumber*i);
+    }
+    
+    // while loop
+    int i = 1;
+    while(i<=10){
+        printf("%d * %d = %d\n",tableNumber,i,tableNumber*i);
+        i++;
+    }
+    return 0;
+}

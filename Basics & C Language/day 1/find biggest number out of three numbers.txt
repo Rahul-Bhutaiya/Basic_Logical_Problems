@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+    int a = 70;
+    int b = 70;
+    int c = 70;
+    
+    if(a>b && a>c){
+        printf("a is big %d",a);
+    }
+    else if(b>a && b>c){
+        printf("b is big %d",b);
+    }
+    else if(c>a && c>b){
+        printf("c is big %d",c);
+    }
+    else if(a==b && a>c){
+        printf("a and b are big and same %d",a);
+    }
+    else if(a==c && a>b){
+        printf("a and c are big and same %d",a);
+    }
+    else if(b==c && b>a){
+        printf("b and c are big and same %d",b);
+    }
+    else{
+        printf("a,b and c all are same %d",a);
+    }
+    return 0;
+}
