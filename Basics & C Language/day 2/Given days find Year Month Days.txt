@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    int number = 5689;
+    int years;
+    int months;
+    int days;
+    
+    years = number / 365;
+    number = number % 365;
+    months = number / 30;
+    days = number % 30;
+    
+    printf("year = %d\n",years);
+    printf("months = %d\n",months);
+    printf("days = %d",days);
+    return 0;
+}

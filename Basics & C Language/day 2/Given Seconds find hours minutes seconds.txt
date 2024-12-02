@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    int number = 5656565;
+    int hours;
+    int minutes;
+    int seconds;
+    
+    hours = number / 3600;
+    number = number % 3600;
+    minutes = number / 60;
+    seconds = number % 60;
+    
+    printf("hours = %d\n",hours);
+    printf("minutes = %d\n",minutes);
+    printf("seconds = %d",seconds);
+    return 0;
+}
