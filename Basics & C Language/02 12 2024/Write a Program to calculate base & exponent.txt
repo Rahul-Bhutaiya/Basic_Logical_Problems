@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int base = 2;
+    int exponent = 4;
+    int power = base;
+    
+    for(int i = 1; i<exponent;i++){
+        power = power * base;
+    }
+    printf("power = %d",power);
+    
+    return 0;
+}

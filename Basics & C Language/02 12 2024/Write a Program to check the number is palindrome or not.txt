@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+    int number = 10101;
+    int reverse = 0;
+    for(int i = number; i>0; i=i/10){
+        int remainder = i % 10;
+        reverse = reverse * 10 + remainder;
+    }
+    if(number == reverse){
+        printf("The number is Palindrome.");
+    }else{
+        printf("The number is not Palindrome.");
+    }
+    
+    return 0;
+}

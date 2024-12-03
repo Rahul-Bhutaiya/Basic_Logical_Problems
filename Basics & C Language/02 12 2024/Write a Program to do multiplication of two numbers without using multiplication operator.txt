@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int number1 = 40;
+    int number2 = 40;
+    int multiplication = number1;
+    
+    for(int i=1; i<number2; i++){
+        multiplication+=number1;
+    }
+    
+    printf("multiply of number1 and number2 is %d",multiplication);
+    return 0;
+}

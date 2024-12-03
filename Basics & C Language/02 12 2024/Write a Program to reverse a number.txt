@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+    int number = 45353;
+    int reverse = 0;
+    while(number>0){
+        int remainder = number % 10;
+        reverse = reverse * 10 + remainder;
+        number = number/10;
+    }
+    printf("reverse = %d",reverse);
+    return 0;
+}
