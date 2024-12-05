@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(){
+    
+    int number = 101000;
+    
+    for(int i=number;i>0;i=i/10){
+        int remainder = i%10;
+        if(remainder != 0 && remainder != 1){
+            printf("false");
+            return 0;
+        }
+    }
+    printf("true");
+    return 0;
+}

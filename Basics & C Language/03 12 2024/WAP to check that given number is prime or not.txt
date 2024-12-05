@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    // Method : 1
+    // int number = 70;
+    // for(int i = 2;i <number; i++){
+    //     if(number%i == 0){
+    //         printf("Not Prime Number");
+    //         return 0;
+    //     }
+    // }
+    // printf("Prime Number");
+    
+    //Method : 2
+    int number = 29;
+    for(int i = 2 ; i<= sqrt(number);i++){
+         if(number%i ==0){
+           printf("Not Prime Number");
+           return 0;
+         }
+    }
+    printf("Prime Number");
+    return 0;
+}
