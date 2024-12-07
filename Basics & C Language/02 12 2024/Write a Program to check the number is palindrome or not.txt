@@ -15,3 +15,30 @@ int main(){
     
     return 0;
 }
+
+//method 2
+
+#include <stdio.h>
+
+int getReverseNum(int num){
+    int reverse = 0;
+    for(int i=num;i>0;i=i/10){
+        int remainder = i%10;
+        reverse = reverse * 10 + remainder;
+    }
+    return reverse;
+}
+
+int main(){
+    
+    int number = 1013;
+    int reverse = getReverseNum(number);
+    if(reverse==number){
+        printf("number is Palindrome");
+    }
+    else{
+        printf("number is not Palindrome");
+    }
+    
+    return 0;
+}

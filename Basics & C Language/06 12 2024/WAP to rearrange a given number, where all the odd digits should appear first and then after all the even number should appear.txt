@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int getReverseNumber(int n){
+    int reverse = 0;
+    for(int i=n;i>0;i=i/10){
+        int remainder = i%10;
+        reverse = reverse * 10 + remainder;
+    }
+    return reverse;
+}
+
+int arrangeOddEven(int reverseNum,int finalNum,int oddEvenFlag){
+    for(int i=reverseNum;i>0;i=i/10){
+        int remainder = i%10;
+        if(remainder%2 == oddEvenFlag){
+            finalNum=finalNum*10+remainder;
+        }
+    }
+    return finalNum;
+}
+
+int main(){
+    int number=24963;
+    int reverse = getReverseNumber(number);
+    int finalNum=arrangeOddEven(reverse,0,1);
+    finalNum=arrangeOddEven(reverse,finalNum,0);
+    printf("Arranged Number : %d",finalNum);
+    return 0;
+}

@@ -14,3 +14,17 @@ int main(){
     
     return 0;
 }
+
+// method : 2
+
+#include <stdio.h>
+
+int main(){
+    int n = 7;
+    int increment = 1;
+    for(int i=1;i<=n;i++){
+        printf("%d ",increment);
+        increment = increment+i;
+    }
+    return 0;
+}

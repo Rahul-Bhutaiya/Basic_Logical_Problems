@@ -18,3 +18,26 @@ int main(){
     
     return 0;
 }
+
+
+method:2
+
+#include <stdio.h>
+
+void checkIsPrime(int n){
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            return ;
+        }
+    }
+    printf("%d ",n);
+}
+
+int main(){
+    int left = 11;
+    int right=20;
+    for(int i =left;i<=right;i++){
+        checkIsPrime(i);
+    }
+    return 0;
+}
