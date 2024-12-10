@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int checkSelfDividingStatus(int n){
+    for(int i=n;i>0;i=i/10){
+        int remainder = i%10;
+        if(remainder == 0 || n%remainder != 0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int main(){
+    int left = 47;
+    int right = 85;
+    
+    for(int i=left;i<=right;i++){
+        int status = checkSelfDividingStatus(i);
+        if(status==1){
+            printf("%d\n",i);
+        }
+    }
+    return 0;
+}

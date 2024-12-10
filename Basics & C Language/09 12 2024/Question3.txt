@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    int n =4421;
+    int sum = 0;
+    double product = 1;
+    
+    for(int i=n;i>0;i=i/10){
+        int remainder = i%10;
+        sum+=remainder;
+        product*=remainder;
+    }
+    printf("Difference = %.0f",product-sum);
+    return 0;
+}
